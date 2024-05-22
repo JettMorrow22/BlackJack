@@ -1,14 +1,11 @@
 package textbasedblackjack;
-import java.util.ArrayList;
-
 
 public class Dealer {
 
-    
-    private ArrayList<Card> hand;
+    private Hand hand;
     
     public Dealer() {
-        hand = new ArrayList<Card>();
+        hand = new Hand();
     }
     
     /**
@@ -16,7 +13,7 @@ public class Dealer {
      * @param card card in players hand
      */
     public void addToHand(Card card) {
-        hand.add(card);
+        hand.addToHand(card);
     }
     
     /**
@@ -25,14 +22,14 @@ public class Dealer {
      * @return the dealers first card value
      */
     public String showOneCard() {
-        return hand.get(0).getValue();
+        return hand.getHand().get(0).getValue();
     }
     
     /**
      * Basic getter for field hand
      * @return return hand
      */
-    public ArrayList<Card> getHand() {
+    public Hand getHand() {
         return hand;
     }
 }

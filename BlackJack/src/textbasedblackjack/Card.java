@@ -13,6 +13,8 @@ public class Card {
     public Card(String num) {
         value = num;
     }
+    
+    
         
     /**
      * basic getter for value field
