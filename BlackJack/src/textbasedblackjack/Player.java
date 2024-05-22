@@ -24,7 +24,10 @@ public class Player {
         balance = num;
     }
     
-    
+    /**
+     * Method to determine if all of the player's hands busted
+     * @return true if all the hands busted
+     */
     public boolean allHandsBusted() {
         boolean status = true;
         for (int x = 0; x < hands.size(); x++) {

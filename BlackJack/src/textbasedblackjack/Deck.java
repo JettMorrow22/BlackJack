@@ -19,6 +19,10 @@ public class Deck {
         shuffleDeck();
     }
     
+    /**
+     * Method that creates the arrayList deck based off how many decks they are
+     * playing with
+     */
     public void initalizeDeck() {
         //each deck has 4 of each number 2-A
         //13 total numbers * 4 so 52 cards * numOfDecks
@@ -55,24 +59,4 @@ public class Deck {
         }
         return deck.remove(0);
     }
-    
-    /**
-     * Basic getter for field deck
-     * @return deck
-     */
-    public ArrayList<Card> getDeck() {
-        return deck;
-    }
-    
-    /**
-     * Simple display method to see the deck that is being worked on
-     */
-    public void printDeck() {
-        System.out.print("Deck = {" + deck.get(0).getValue() + ", ");
-        for (int x = 1; x < deck.size() - 1; x++) {
-            System.out.print(deck.get(x).getValue() + ", ");
-        }
-        System.out.println(deck.get(deck.size() - 1).getValue() + "}");
-    }
-
 }

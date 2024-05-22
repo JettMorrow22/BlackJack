@@ -378,6 +378,24 @@ public class Main {
         }
     }
     
+    
+    
+    /**
+     * Function to show the full hand of both the dealer and player
+     */
+    public static void showFullTable() {
+        System.out.println("Dealer Has: " + showHand(dealer.getHand()) 
+            + " - Total: " + calculateHand(dealer.getHand()));
+        
+        //loop through all the player hands
+        for (int x = 0; x < player.getHands().size(); x ++) {
+            System.out.println("\nPlayer Has: " + showHand(player.getHand(x).getHand())
+            + " - Total: " + calculateHand(player.getHand(x).getHand()));
+        }
+        
+        System.out.println("Player Balance: " + player.getBalance());
+    }
+  
     /**
      * simple method to determine if the hand busted
      * added functionality of soft aces, if hand is busted, check if it has an
@@ -395,22 +413,6 @@ public class Main {
             return true;
         }
         return false;
-    }
-    
-    /**
-     * Function to show the full hand of both the dealer and player
-     */
-    public static void showFullTable() {
-        System.out.println("Dealer Has: " + showHand(dealer.getHand()) 
-            + " - Total: " + calculateHand(dealer.getHand()));
-        
-        //loop through all the player hands
-        for (int x = 0; x < player.getHands().size(); x ++) {
-            System.out.println("\nPlayer Has: " + showHand(player.getHand(x).getHand())
-            + " - Total: " + calculateHand(player.getHand(x).getHand()));
-        }
-        
-        System.out.println("Player Balance: " + player.getBalance());
     }
     
     

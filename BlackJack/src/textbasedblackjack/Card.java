@@ -22,6 +22,10 @@ public class Card {
         return value;
     }
     
+    /**
+     * basic setter for value field
+     * @param s the new value of the card
+     */
     public void setValue( String s) {
         value = s;
     }

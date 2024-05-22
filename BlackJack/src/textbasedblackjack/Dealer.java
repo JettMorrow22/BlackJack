@@ -19,15 +19,13 @@ public class Dealer {
         hand.add(card);
     }
     
+    /**
+     * Special function that only shows the dealers first card when it is the
+     * players turn
+     * @return the dealers first card value
+     */
     public String showOneCard() {
         return hand.get(0).getValue();
-    }
-    
-    /**
-     * used to clear hand after every hand
-     */
-    public void clearHand() {
-        hand.clear();
     }
     
     /**
