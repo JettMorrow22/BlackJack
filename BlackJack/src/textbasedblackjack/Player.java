@@ -4,14 +4,6 @@ import java.util.ArrayList;
 
 public class Player {
 
-    
-    //HOW TO IMPLEMENT SPLITTING
-    //change the player hand to be an arrayList of arrayList<card>
-    //soo they can have more than one hand
-    //would have to change alot of shit wow alot of shit
-    
-    
-    //------------------------------------------------------------
     private ArrayList<Hand> hands;
     private int balance;
     

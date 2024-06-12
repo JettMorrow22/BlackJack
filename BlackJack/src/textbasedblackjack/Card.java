@@ -14,7 +14,6 @@ public class Card {
         value = num;
     }
     
-    
         
     /**
      * basic getter for value field
